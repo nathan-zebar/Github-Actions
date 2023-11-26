@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AwWoVheAwex4bPqTLARJ7AzeehDYSpYOgeETRcoCku7vEo74ykADCmzpZSw23BmFacBdiiqewnQ3hvoUuW5iBA==",
+  "success": true,
+  "projectFilePath": "C:\\App1\\Folder1\\Github Actions\\Github Actions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+  ],
+  "logs": []
+}

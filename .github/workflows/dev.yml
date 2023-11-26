@@ -1,1 +1,28 @@
+name: Nathan Pipeline
 
+on:
+    push:
+        branches: [branch3, branch2 ]
+
+env:
+    ONE: ENV_ONE
+    TWO: ENV_TWO
+
+jobs:
+  Build:
+    name: Build Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Echo Secret
+        shell: pwsh
+        run: |
+            Write-Host "${{secrets.SECRET_ONE}}"
+      - name: Run Terraform
+        shell: pwsh
+        run: |
+            cd ${{ github.workspace }}/Terraform/network/useast1
+            terraform init 
+
+
+      
