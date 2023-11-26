@@ -19,6 +19,7 @@ jobs:
 
   Build2:
     name: Build Job 2
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
