@@ -1,8 +1,9 @@
 name: Nathan Pipeline
 
-push:
-    branches:
-      - branch3
+on:
+    push:
+        branches:
+          - branch3
 
 env:
     ONE: ENV_ONE
