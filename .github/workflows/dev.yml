@@ -1,1 +1,18 @@
+name: Nathan Pipeline
 
+push:
+    branches:
+      - branch3
+
+env:
+    ONE: ENV_ONE
+    TWO: ENV_TWO
+
+jobs:
+  Build:
+    name: Build Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - run: echo ${{ env.ONE }}
+      
