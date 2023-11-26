@@ -16,4 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - run: echo ${{ env.ONE }}
+
+  Build2:
+    name: Build Job 2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - run: echo ${{ env.ONE }}
       
