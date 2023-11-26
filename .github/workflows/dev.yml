@@ -15,13 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - run: echo ${{ env.ONE }}
+      - name: Run Terraform
+        shell: pwsh
+        run: |
+            cd ${{ github.workspace }}/Terraform/network/useast1
+            terraform init 
 
-  Build2:
-    name: Build Job 2
-    needs: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@main
-      - run: echo ${{ env.ONE }}
+
       
