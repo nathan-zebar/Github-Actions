@@ -2,8 +2,7 @@ name: Nathan Pipeline
 
 on:
     push:
-        branches:
-          - branch3
+        branches: [branch3, branch2 ]
 
 env:
     ONE: ENV_ONE
